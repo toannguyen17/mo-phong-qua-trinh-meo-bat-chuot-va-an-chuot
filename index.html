@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột</title>
+	<script type="text/javascript" src="Cat.js"></script>
+	<script type="text/javascript" src="Rat.js"></script>
+</head>
+<body>
+	<p>[*Bài tập] Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột</p>
+	<script type="text/javascript">
+		let mouse = new Rat('Chuột 1', 50, 30);
+		let cat   = new Cat('Mèo 1', 400, 10, 100);
+		console.log('Mèo nhìn thấy chuột.');
+		console.log('Mèo tăng tốc tối đa.');
+		cat.maxSpeed();
+		console.log('Mèo đuổi theo và bắt được chuột.');
+		console.log('Chuột sống, mèo ăn chuột.');
+		cat.catchMouse(mouse);
+		console.log('Cân nặng của mèo tăng nên và chuột giảm.');
+		// the end
+	</script>
+</body>
+</html>
